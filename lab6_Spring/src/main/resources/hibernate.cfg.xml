@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_jdbc_lab?useLegacyDatetimeCode=false&amp;serverTimezone=Europe/Amsterdam&amp;useSSL=false</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">0670340667</property>
+        <property name="hibernate.connection.pool_size">14</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <mapping class="ua.iot.tfk.domain.Bus" />
+        <mapping class="ua.iot.tfk.domain.City" />
+        <mapping class="ua.iot.tfk.domain.Cruise" />
+        <mapping class="ua.iot.tfk.domain.Guide" />
+        <mapping class="ua.iot.tfk.domain.Hotel" />
+        <mapping class="ua.iot.tfk.domain.Land" />
+        <mapping class="ua.iot.tfk.domain.Pedestrian" />
+        <mapping class="ua.iot.tfk.domain.StartNextArrival" />
+        <mapping class="ua.iot.tfk.domain.StoppingPoint" />
+        <mapping class="ua.iot.tfk.domain.Tour" />
+        <mapping class="ua.iot.tfk.domain.TourHasGuide" />
+        <mapping class="ua.iot.tfk.domain.TourHasStoppingPoint" />
+        <mapping class="ua.iot.tfk.domain.Tourist" />
+        <mapping class="ua.iot.tfk.domain.TouristDestination" />
+
+    </session-factory>
+</hibernate-configuration>
